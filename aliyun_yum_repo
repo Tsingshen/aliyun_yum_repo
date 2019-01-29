@@ -4,3 +4,7 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
 #install
 yum install -y epel-release && yum clean all && yum makecache
+
+#use curl
+curl http://mirrors.aliyun.com/repo/Centos-7.repo > /etc/yum.repos.d/CentOS-Base.repo
+curl http://mirrors.aliyun.com/repo/epel-7.repo > /etc/yum.repos.d/epel.repo
