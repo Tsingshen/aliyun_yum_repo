@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh '''ls /tmp && echo "abc" > /tmp/123.txt'''
+        sh 'ls && ehco "abc" >/tmp/123.txst'
       }
     }
     stage('123.txt') {
