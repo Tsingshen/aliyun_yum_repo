@@ -19,7 +19,7 @@ pipeline {
     }
     stage('publish') {
       steps {
-        readFile '**/123.xml'
+        readFile '123.xml'
       }
     }
   }
