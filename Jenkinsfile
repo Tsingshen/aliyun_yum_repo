@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh 'ls && echo "abc" >/tmp/123.xml'
+        sh 'ls && pwd && echo "abc" > 123.xml'
       }
     }
     stage('123.txt') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('publish') {
       steps {
-        readFile '**/123.txt'
+        readFile '**/123.xml'
       }
     }
   }
