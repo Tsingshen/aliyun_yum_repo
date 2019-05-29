@@ -14,7 +14,7 @@ pipeline {
     }
     stage('123.txt') {
       steps {
-        archiveArtifacts(artifacts: '/tmp/123.txt', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: '123.xml', onlyIfSuccessful: true)
       }
     }
     stage('publish') {
